@@ -1,12 +1,13 @@
 import { useState } from "react";
-import PlayerList from "./PlayerList/PlayerList.jsx";
+
+import Home from "./pages/Home";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <PlayerList />
+      <Home />
     </>
   );
 }
