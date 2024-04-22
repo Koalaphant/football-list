@@ -2,6 +2,7 @@
   "name": "football-list",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://tnf.duckpixel.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +12,9 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.42.5",
+    "localtunnel": "^2.0.2",
     "react": "^18.2.0",
+    "react-countdown": "^2.3.5",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
