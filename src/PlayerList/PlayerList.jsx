@@ -126,6 +126,7 @@ const PlayerList = () => {
   return (
     <>
       <h1>Thursday Night Football</h1>
+
       {submittedNames.length >= 25 && (
         <p id="form-full">
           The form has been hidden because there are 14 or more entries.
@@ -139,7 +140,9 @@ const PlayerList = () => {
               value={name}
               onChange={handleNameChange}
             />
-            <button type="submit">Submit</button>
+            <button className="submit-btn" type="submit">
+              Submit
+            </button>
           </form>
         </>
       )}
@@ -156,7 +159,7 @@ const PlayerList = () => {
         })}
         {submittedNames.length > 14 && (
           <div className="reserves">
-            <h2>Reserves</h2>
+            <h2 className="reserves">Reserves</h2>
             {submittedNames.slice(14).map((item, index) => {
               return (
                 <div className="names" key={index}>
